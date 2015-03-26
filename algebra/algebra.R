@@ -1,0 +1,8 @@
+source("mcm.R")
+source("ec2g.R")
+source("mcd.R")
+source("simplifica.R")
+source("sumfrac.R")
+source("factoriza.R")
+source("raices.R")
+source("divisores.R")

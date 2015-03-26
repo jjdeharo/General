@@ -1,0 +1,19 @@
+# Genera números enteros al azar normales
+
+aleatn <- function(n=20,media=100,s=10) 
+  return(round(rnorm(n,media,s)))
+
+	
+	
+
+# Genera números aleatorios enteros	
+  aleat <- function(n=10,inicio=1,fin=10)
+    return(round(runif(n,inicio,fin)))
+  
+  cat("\naleat(n,inicio,fin) para general números aleatorios enteros.")
+  cat("\naleatn(n,media,s) para general números aleatorios enteros con distribucion normal.")
+
+  
+  
+  
+  cat("\n\n")
