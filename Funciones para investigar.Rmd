@@ -1,0 +1,7 @@
+---
+title: "Funciones para examinar"
+output: html_document
+---
+
+aov() # Análisis de la varianza
+TukeyHSD() # Comparaciones múltiples
