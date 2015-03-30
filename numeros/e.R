@@ -1,7 +1,7 @@
 # Cálculo del nº e. Admite vectores
 
 e <- function(n=100) {
-  e <- (1+1/n)^n
+
   ea <- abs(exp(1)-e)
   er <- 100*(abs(exp(1)-e))/exp(1)
   
