@@ -18,7 +18,7 @@ library(mda) # necesaria para fda
 
 # AD lineal
 datos.lda <- lda(f~., datos) # AD con todas las variables explicando f
-datos.lda.p <- predict(datos.lda)
+datos.lda.p <- predict(datos.lda,interval='confidence')
 (datos.lda.mc <- errormatrix(datos$f, datos.lda.p$class))  # Matriz de confusión
 datos.lda.mc2 <- table(datos$f, datos.lda.p$class) # Cálculo de la matriz de confusión directo (sin usar la funcińo errormatrix)
 cat("Elementos correctamente clasificados por lda: ", sum(diag(datos.lda.mc2)), " (",round(100 * sum(diag(datos.lda.mc2)) / sum(datos.lda.mc2)), "%)\n", sep="")
