@@ -28,3 +28,5 @@ nuevo <- data.frame(Sepal.Length=5,Sepal.Width=3,Petal.Length=1.5,Petal.Width=0.
 predicción <- predict(datos.lda,newdata=nuevo, interval='confidence')
 cat("\nAsignado a: ")
 print(prediccion$class)
+cat("\nProbabilidad de pertenencia a cada clase:\n")
+print(prediccion$posterior)
