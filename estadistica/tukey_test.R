@@ -1,4 +1,4 @@
-# Comparación de medias, test de Tukey
+# Comparación de pares de medias, test de Tukey
 # Prueba paramétrica
 
 x1 <- rnorm(100,10)
