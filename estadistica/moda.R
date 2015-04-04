@@ -4,7 +4,6 @@
 moda <- function(x) {
   tabla <- table(x)
   t <- as.numeric(tabla)
-  if(sum(t) == length(t)) return(NULL)
   
   frec <- -sort(-tabla)[1]
   n <- sum(frec == tabla)
