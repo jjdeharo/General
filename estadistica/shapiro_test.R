@@ -1,4 +1,4 @@
-# Test de normalidad de Shapiro
+# Test de normalidad de Shapiro-Wilk
 
 x <- rnorm(100)
 x.test <- shapiro.test(x)
