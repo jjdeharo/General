@@ -1,6 +1,6 @@
 # Comparación de pares de medias, test de Tukey
 # Prueba paramétrica
-
+set.seed(10)
 x1 <- rnorm(100,10)
 x2 <- rnorm(100,10.5)
 x3 <- rnorm(100,10)

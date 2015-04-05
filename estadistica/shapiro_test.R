@@ -1,5 +1,5 @@
 # Test de normalidad de Shapiro-Wilk
-
+set.seed(10)
 x <- rnorm(100)
 x.test <- shapiro.test(x)
 print(x.test)
