@@ -2,6 +2,8 @@
 
 # Ejemplo 1
 # 10 números al azar entre 1 y 100
+
+set.seed(10)
 print(runif(10,1,100))
 
 # Ejemplo 2

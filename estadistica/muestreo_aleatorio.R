@@ -6,6 +6,7 @@ data(Nile)
 
 # Ejemplo 1
 # Tomamos una muestra aleatoria de tamaño 10 sin reemplazamiento (es decir, cada dato sólo puede salir una vez)
+set.seed(10)
 muestra <- sample(Nile,10,replace=F)
 print(muestra)
 

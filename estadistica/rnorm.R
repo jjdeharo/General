@@ -1,5 +1,5 @@
 # Datos aleatorios normales, distribución normal
-
+set.seed(10)
 # Ejemplo 1
 # 10 números al azar,media 100 y desviación típica 2
 print(rnorm(10,100,2))
