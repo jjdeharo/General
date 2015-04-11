@@ -63,21 +63,17 @@ img {
 <div id="header">
 <h1 class="title">ANOVA_un_nivel.R</h1>
 <h4 class="author"><em>jjdeharo</em></h4>
-<h4 class="date"><em>Mon Apr 6 01:05:59 2015</em></h4>
+<h4 class="date"><em>Thu Apr 9 22:02:28 2015</em></h4>
 </div>
 
 
 <pre class="r"><code># Comparación de medias, ANOVA
 # Prueba paramétrica
-set.seed(10)
-x1 &lt;- rnorm(100,10)
-x2 &lt;- rnorm(100,10.5)
-x3 &lt;- rnorm(100,10)
+datos &lt;-read.table(file=&quot;http://pastebin.com/raw.php?i=UHacpEu2&quot;,header=T)
 
-# Primera opción: mediante factores
-x &lt;- c(x1,x2,x3) # Unión de las 3 variables en una
-f &lt;- factor(c(rep(&quot;x1&quot;,100),rep(&quot;x2&quot;,100),rep(&quot;x3&quot;,100))) # Factores
-
+#  mediante factores
+x &lt;- datos$x # Se extrae la variable x de la tabla
+f &lt;- datos$f # Factores
 test &lt;- aov(x~f)
 
 print(summary(test))</code></pre>
